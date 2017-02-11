@@ -1,0 +1,512 @@
+@font-face {
+  font-family:"Lato Black";
+  src:url("../fonts/Lato-Black.eot?") format("eot"),
+      url("../Lato-Black.woff") format("woff"),
+      url("../Lato-Black.ttf") format("truetype"),
+      url("../Lato-Black.svg#Lato-Black") format("svg");
+      font-weight:normal;
+      font-style:normal;
+}
+
+@font-face {
+  font-family:"Lato Light";
+  src:url("../fonts/Lato-Light.eot?") format("eot"),
+      url("../fonts/Lato-Light.woff") format("woff"),
+      url("../fonts/Lato-Light.ttf") format("truetype"),
+      url("../fonts/Lato-Light.svg#Lato-Light") format("svg");
+      font-weight:normal;
+      font-style:normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+$background-color: #fff;
+$second-background-color: #3679fd;
+$third-background-color: #f1f8ff;
+$main-title-color: #3695ff;
+$grid-elem-color: #f4f4f4;
+$second-title-color: #5a5a5a;
+$container-width: 1170px;
+
+body {
+  width: auto;
+  min-width: 400px;
+  height: auto;
+  font-size: 100%;
+}
+
+.cookies_message {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 70px;
+     background-color: #194277;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+
+
+       .main_text {
+          font-family: "Lato Black";
+          color: #fff;
+          font-size: 0.8em;
+          margin: 0 0 0 0;
+         }
+
+        a.button {
+          display: block;
+          width: 112px;
+          height: 30px;
+          margin: 0 0 0 4%;
+          background-color: #fff;
+          font-family: "Lato Black";
+          font-weight: 500;
+          color: $main-title-color;
+          text-align: center;
+          line-height: 28px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: background-color ease-in-out 0.15s;
+      
+         &:hover {
+          background-color: #3695ff;
+          color: #fff;
+         }
+     
+         &:active {
+          border-bottom: 1px solid #fff;
+         }
+        }
+}
+
+.welcome_container {
+  width: 100%;
+  background-color: $second-background-color;
+  background-image: url("../img/welcome_gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+      .welcome_inner_container {
+            width: $container-width;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        a.menu {
+          width: 25px;
+          height: 19px;
+          background-image: url("../img/menu_hamburger.png");
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
+          align-self: flex-end;
+          margin: 105px 40px 0 0;
+        }
+      
+        .logo {
+          width: 150px;
+          min-width: 150px;
+          height: 150px;
+          min-height: 150px;
+          margin: 60px 0 0 0;
+          background: #fff;
+          border-radius: 75px;
+          transition: opacity ease-in-out 0.3s;
+
+          &:hover {
+            opacity: 0.7;
+          }
+         }
+      
+        .main_text {
+          width: 70%;
+          font-family: "Lato Black";
+          color: #fff;
+          font-size: 3.2em;
+          text-align: center;
+          padding: 60px 0 0 0;
+         }
+      
+        .primary_text {
+          width: 70%;
+          font-family: "Lato Light";
+          color: #fff;
+          font-size: 1em;
+          text-align: center;
+          padding: 20px 0 0 0;
+          line-height: 35px;
+         }
+      
+         a.button {
+          display: block;
+          width: 200px;
+          height: 55px;
+          background-color: #fff;
+          font-family: "Lato Black";
+          font-weight: 500;
+          color: $main-title-color;
+          margin: 70px 0 0 0;
+          text-align: center;
+          line-height: 55px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: background-color ease-in-out 0.15s;
+      
+         &:hover {
+          background-color: #3695ff;
+          color: #fff;
+         }
+     
+         &:active {
+          border-bottom: 1px solid #fff;
+         }
+        }
+      
+         a.arrow_symbol {
+          font-family: "Verdana";
+          align-self: center;
+          color: #fff;
+          font-size: 2em;
+          margin: 90px 0 20px 0;
+      }
+      
+   }
+}
+
+.aboutme_container {
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+
+      .aboutme_inner_container {
+            width: $container-width;
+            min-height: 400px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+      
+        .main_text {
+          color: $main-title-color;
+          font-family: "Lato Light";
+          font-size: 3em;
+          margin: 90px 0 0 0;
+        }
+
+        .primary_text {
+          width: 90%;
+          line-height: 200%;
+          text-align: center;
+          color: $second-title-color;
+          font-family: "Lato Light";
+          font-weight: 600;
+          font-size: 1em;
+          margin: 50px 0 20px 0;
+        }
+    }
+}
+
+.expertin_container {
+  background-color: $third-background-color;
+  display: flex;
+  justify-content: center;
+
+      .expertin_inner_container {
+            width: $container-width;
+            min-height: 1147px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        .main_text {
+          color: $main-title-color;
+          font-family: "Lato Light";
+          font-size: 3em;
+          margin: 90px 0 0 0;
+        }
+
+        .skills {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .skill_block {
+          width: 360px;
+          min-height: 430px;
+          height: auto;
+          color: $second-title-color;
+          margin: 0 15px 10px 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+
+              .logo {
+                width: 140px;
+                height: 140px;
+                margin: 18% 0 0 0;
+                border-radius: 70px;
+                background-color: #fff;
+                border: 1px solid #c2cbd4;
+                background-image: url("../img/skills.png");
+                background-repeat: no-repeat;
+                transition: opacity ease-in-out 0.3s;
+
+                  &:hover {
+                    opacity: 0.5;
+                  }
+              }
+
+              .lg1 {
+                background-position: -51px -63px;
+               }
+
+               .lg2 {
+                background-position: -310px -59px;
+               }
+
+               .lg3 {
+                background-position: -575px -59px;
+               }
+
+               .lg4 {
+                background-position: -1380px -65px;
+               }
+
+               .lg5 {
+                background-position: -1115px -65px;
+               }
+
+               .lg5 {
+                background-position: -840px -65px;
+               }
+
+              .name {
+                text-align: center;
+                margin: 16% 0 0 0;
+                font-family: "Lato Black";
+                font-size: 1.55em;
+                color: $main-title-color;
+              }
+
+              .describe {
+                width: 100%;
+                text-align: center;
+                margin: 5% 0 0 0;
+                font-family: "Lato Black";
+                font-size: 1em;
+                line-height: 210%;
+                color: $second-title-color;
+              }
+        }
+
+   }
+}
+
+
+.latestworks_container {
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+
+      .latestworks_inner_container {
+            width: $container-width;
+            min-height: 1017px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+              
+        .main_text {
+          color: $main-title-color;
+          font-family: "Lato Light";
+          font-size: 3em;
+          margin: 90px 0 0 0;
+        }
+
+        .works {
+          width: 100%;
+          display: flex;
+          margin: 90px 0 0 0;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .works_block {
+          width: 360px;
+          min-height: 270px;
+          background-color: #f4f4f4;
+          border-radius: 10px;
+          height: auto;
+          color: $second-title-color;
+            margin: 0 15px 55px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("../img/works.png");
+            background-repeat: no-repeat;
+            transition: opacity ease-in-out 0.3s;
+
+              &:hover {
+                opacity: 0.9;
+              }
+         }
+
+         .wrk1 {
+          background-position: -60px -70px;
+         }
+
+         .wrk2 {
+          background-position: -485px -70px;
+         }
+
+         .wrk3 {
+          background-position: -910px -70px;
+         }
+
+         .wrk4 {
+          background-position: -1395px -60px;
+         }
+
+         .wrk5 {
+          background-position: -1815px -45px;
+         }
+
+         .wrk6 {
+          background-position: -2230px -50px;
+         }
+     }
+}
+
+
+.clients_container {
+  background-color: $third-background-color;
+  display: flex;
+  justify-content: center;
+
+      .clients_inner_container {
+            width: $container-width;
+            min-height: 365px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+      
+        .main_text {
+          color: $main-title-color;
+          font-family: "Lato Light";
+          font-size: 3em;
+          margin: 90px 0 0 0;
+        }
+
+        .clients {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+
+
+          .client {
+            width: 225px;
+            height: 80px;
+            background-image: url("../img/clients.png");
+            background-repeat: no-repeat;
+            filter: grayscale(100%);
+            margin: 40px 10px 50px 10px;
+            transition: opacity ease-in-out 0.3s;
+
+              &:hover {
+                opacity: 0.5;
+              }
+          }
+
+          .n1 {
+            background-position: -30px -15px;
+          }
+
+          .n2 {
+            background-position: -320px -5px;
+          }
+
+          .n3 {
+            background-position: -580px -25px;
+          }
+
+          .n4 {
+            background-position: -840px -27px;
+          }
+        }
+   }
+}
+
+
+.hireme_container {
+  background-color: $second-background-color;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/hireme_gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+      .hireme_inner_container {
+            width: $container-width;
+            min-height: 250px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 0 100px 0;
+
+              .main_text {
+                   font-family: "Lato Light";
+                   color: #fff;
+                   font-size: 3.2em;
+                   text-align: center;
+                   margin: 90px 0 0 0;
+
+                     span {
+                        font-family: "Lato Black";
+                     }
+              }
+              a.button {
+          
+          width: 200px;
+          height: 55px;
+          background-color: #fff;
+          font-family: "Lato Black";
+          font-weight: 500;
+          color: $main-title-color;
+         margin: 100px 0 0 50px;
+          text-align: center;
+          line-height: 55px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: background-color ease-in-out 0.15s;
+      
+         &:hover {
+          background-color: #3695ff;
+          color: #fff;
+         }
+     
+         &:active {
+          border-bottom: 1px solid #fff;
+         }
+        }
+   }
+
+}
+
+
+
+
+
